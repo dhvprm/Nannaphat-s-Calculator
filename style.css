@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ff526f,#7b8cff);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calculator {
+    width: 310px;
+    background: linear-gradient(145deg, #ffffff, #f2f4ff);
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+    animation: popup 0.45s ease;
+}
+
+
+@keyframes popup {
+    from {
+        transform: scale(0.9) translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: #d04adc;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border-radius: 9px;
+    border: 1px solid #cfd6ff;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a5bdc;
+    box-shadow: 0 0 0 2px rgba(74, 91, 220, 0.25);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+button {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff526f,#7b8cff);
+    box-shadow: 0 5px 12px rgba(106, 124, 255, 0.35);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(106, 124, 255, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.clear-btn {
+    background: linear-gradient(135deg, #ff0000, #ff5100, #ffae00);
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow:
+        0 6px 18px rgba(255, 47, 47, 0.55),
+        0 0 10px rgba(255, 106, 0, 0.6);
+}
+
+
+.clear-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:
+        0 10px 25px rgba(255, 47, 47, 0.75),
+        0 0 18px rgba(255, 106, 0, 0.9);
+}
+
+
+.clear-btn:active {
+    transform: scale(0.9);
+    box-shadow:
+        inset 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+#resultDisplay {
+    margin-top: 18px;
+    padding: 11px;
+    background: linear-gradient(135deg, #eef1ff, #dde3ff);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 11px;
+    color: #333;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
